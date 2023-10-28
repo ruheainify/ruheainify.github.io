@@ -42,6 +42,27 @@
             font-size: 16px;
             /* 或者你想要的任何大小 */
         }
+
+        p {
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        h2 {
+            color: #ffffff;
+        }
+
+        a {
+            color: #ffffff;
+            text-decoration: none;
+            /* 移除默认的下划线 */
+        }
+
+        a:hover {
+            text-decoration: underline;
+            /* 添加下划线 */
+        }
     </style>
 
     <script>
@@ -73,40 +94,42 @@
 
 </head>
 
-<body>
-    <p>网页版目前正在测试调试中，可能会有bug，请刷新并联系<a href="https://blog.zhengxian.top">作者</a></p>
+<body style="padding:5% 3% 3% 3%;background-image:url(https://blog.zhengxian.top/logo.jpeg);">
+    <p>网页版目前正在测试调试中，可能会有bug，如出现问题，请刷新并联系<a href="https://blog.zhengxian.top">作者</a></p>
     <p>电脑用户建议下载客户端，体验更不错！<a href="https://dtgb.zhengxian.top/">客户端下载入口</a></p>
-    <h2>广州地铁报站模拟器<h2>
-            <div class="dropdown">
-                <button class="dropbtn">点击展开下拉框并选择路线</button>
-                <div id="myDropdown" class="dropdown-content">
-                    <!--<br>用于换行-->
-                    <a href="/l1" style="color: gold;">1号线</a><br>
-                    <a href="/l2" style="color: rgb(3, 184, 255);">2号线</a><br>
-                    <a href="/l3" style="color: rgb(255, 146, 3);">3号线</a><br>
-                    <!--选择线路下拉组合框-->
-                </div>
-            </div>
-            <br>
+    <h2>广州地铁报站模拟器</h2>
+    <div class="dropdown">
+        <button class="dropbtn">点击展开下拉框并选择路线</button>
+        <div id="myDropdown" class="dropdown-content">
             <!--<br>用于换行-->
-            <div class="dropdown">
-                <button class="dropbtn">点击展开站点</button>
-                <div id="myDropdown" class="dropdown-content">
-                    <!--<br>用于换行-->
-                    <a href="" style="color: rgb(0, 0, 0);">请先选择线路</a><br>
-                    <!--选择线路下拉组合框-->
-                </div>
-            </div>
-            <p>请先选择线路！</p>
+            <a href="/l1" style="color: gold;">1号线</a><br>
+            <a href="/l2" style="color: rgb(3, 184, 255);">2号线</a><br>
+            <a href="/l3" style="color: rgb(255, 146, 3);">3号线</a><br>
+            <!--选择线路下拉组合框-->
+        </div>
+    </div>
+    <br>
+    <!--<br>用于换行-->
+    <div class="dropdown">
+        <button class="dropbtn">点击展开站点</button>
+        <div id="myDropdown" class="dropdown-content">
+            <!--<br>用于换行-->
+            <a href="" style="color: rgb(0, 0, 0);">请先选择线路</a><br>
+            <!--选择线路下拉组合框-->
+        </div>
+    </div>
+    <p>请先选择线路！</p>
 
-            <!--底部信息-->
-            <footer>
-                <br>
-                <a href="httpss://beian.miit.gov.cn/" class="my-link">粤ICP备2023109504号-1</a>
-                <br>
-                <p style="font-size: 16px;">by:<a href="https://blog.zhengxian.top/" class="my-link">380AM-0204</a></p>
-                <a href="https://blog.zhengxian.top/index.php/bzqgxrz.html" class="my-link">更新日志</a>
-            </footer>
+    <!--底部信息-->
+    <footer>
+        <br>
+        <a href="httpss://beian.miit.gov.cn/" class="my-link">粤ICP备2023109504号-1</a>
+        <br>
+        <p style="font-size: 16px;">by:<a href="https://blog.zhengxian.top/" class="my-link">380AM-0204</a>
+        </p>
+        <a href="https://blog.zhengxian.top/index.php/bzqgxrz.html" class="my-link">更新日志</a>
+    </footer>
+
 </body>
 
 </html>
