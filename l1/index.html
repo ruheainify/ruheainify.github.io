@@ -42,6 +42,26 @@
             font-size: 16px;
             /* 或者你想要的任何大小 */
         }
+
+
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #008CBA;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            border: none;
+        }
+
+        .button:hover {
+            background-color: white;
+            color: black;
+        }
     </style>
 
     <script>
@@ -120,6 +140,14 @@
         function playAudio15() {
             var audio15 = document.getElementById('audio15');
             audio15.play();
+        }
+        function playAudio16() {
+            var audio16 = document.getElementById('audio16');
+            audio16.play();
+        }
+        function playAudio17() {
+            var audio17 = document.getElementById('audio17');
+            audio17.play();
         }  
     </script>
     <script>
@@ -148,11 +176,17 @@
                     <!--选择线路下拉组合框-->
                 </div>
                 <br>
+                <br>
             </div>
             <br>
             <!--<br>用于换行-->
+            <button type="button"><a href="#" onclick="playAudio16()"
+                    style="color: #000000;text-decoration: none;  ">关门铃声</a></button>
+            <button type="button"><a href="#" onclick="playAudio17()"
+                    style="color: #000000;text-decoration: none;  ">临时停车</a></button><br>
             <div class="dropdown">
                 <button class="dropbtn">选择区间</button>
+                <br>
                 <div id="myDropdown" class="dropdown-content">
                     <!--<br>用于换行-->
                     <!--站点-->
@@ -197,6 +231,8 @@
             <audio id="audio13" src="https://gbh.zhengxian.top/sound/1/下站花地湾.mp3" preload="auto"></audio>
             <audio id="audio14" src="https://gbh.zhengxian.top/sound/1/下站坑口.mp3" preload="auto"></audio>
             <audio id="audio15" src="https://gbh.zhengxian.top/sound/1/下站西塱.mp3" preload="auto"></audio>
+            <audio id="audio16" src="https://gbh.zhengxian.top/sound/1/关门.mp3" preload="auto"></audio>
+            <audio id="audio17" src="https://gbh.zhengxian.top/临时停车.mp3" preload="auto"></audio>
             <!--分割线-->
             <script>
                 //该js用于停止播放
@@ -218,14 +254,13 @@
 
             </script>
             <!--底部信息-->
-            <div>
+            <footer>
                 <br>
                 <a href="httpss://beian.miit.gov.cn/" class="my-link">粤ICP备2023109504号-1</a>
                 <br>
                 <p style="font-size: 16px;">by:<a href="httpss://blog.zhengxian.top/" class="my-link">380AM-0204</a></p>
-                <a href="httpss://blog.zhengxian.top/index.php/bzqgxrz.html" class="my-link">更新日志</a>
-
-            </div>
+                <a href="https://blog.zhengxian.top/index.php/bzqgxrz.html" class="my-link">更新日志</a>
+            </footer>
 </body>
 
 </html>
