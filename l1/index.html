@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>广州地铁报站模拟器</title>
+    <style>
+        .center-link {
+            text-align: center;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        /*
+            .dropdown-content a {
+            color: rgb(3, 167, 243);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        */
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .my-link {
+            font-size: 16px;
+            /* 或者你想要的任何大小 */
+        }
+    </style>
+
+    <script>
+        // 获取按钮和下拉框元素  
+        var dropdown = document.getElementsByClassName("dropdown")[0];
+        var dropdownContent = document.getElementById("myDropdown");
+
+        // 添加点击事件到按钮上，展开下拉框  
+        dropdown.addEventListener("click", function () {
+            dropdownContent.style.display = "block";
+        });
+
+        function playAudio() {
+            var audio = document.getElementById('audio');
+            audio.play();
+        }
+        //分割线
+        //以下用于播放音频，如有新的音频需要播放，新增一个并修改数字，修改数字一般是+1
+        function playAudio1() {
+            var audio1 = document.getElementById('audio1');
+            audio1.play();
+        }
+
+        function playAudio2() {
+            var audio2 = document.getElementById('audio2');
+            audio2.play();
+        }
+        function playAudio3() {
+            var audio2 = document.getElementById('audio3');
+            audio3.play();
+        }
+        function playAudio4() {
+            var audio4 = document.getElementById('audio4');
+            audio4.play();
+        }
+        function playAudio5() {
+            var audio5 = document.getElementById('audio5');
+            audio5.play();
+        }
+        function playAudio6() {
+            var audio6 = document.getElementById('audio6');
+            audio6.play();
+        }
+        function playAudio7() {
+            var audio7 = document.getElementById('audio7');
+            audio7.play();
+        }
+        function playAudio8() {
+            var audio8 = document.getElementById('audio8');
+            audio8.play();
+        }
+        function playAudio9() {
+            var audio9 = document.getElementById('audio9');
+            audio9.play();
+        }
+        function playAudio10() {
+            var audio10 = document.getElementById('audio10');
+            audio10.play();
+        }
+        function playAudio11() {
+            var audio11 = document.getElementById('audio11');
+            audio11.play();
+        }
+        function playAudio12() {
+            var audio12 = document.getElementById('audio12');
+            audio12.play();
+        }
+        function playAudio13() {
+            var audio13 = document.getElementById('audio13');
+            audio13.play();
+        }
+        function playAudio14() {
+            var audio14 = document.getElementById('audio14');
+            audio14.play();
+        }
+        function playAudio15() {
+            var audio15 = document.getElementById('audio15');
+            audio15.play();
+        }  
+    </script>
+</head>
+
+<body>
+    <p>建议下载客户端，体验更不错！（手机用户请忽略！）</p>
+    <h2>广州地铁报站模拟器<h2>
+            <div class="dropdown">
+                <button class="dropbtn">选择路线</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <!--<br>用于换行-->
+                    <a href="l1" style="color: gold;">1号线</a><br>
+                    <a href="l2" style="color: rgb(3, 184, 255);">2号线</a><br>
+                    <a href="l3" style="color: rgb(255, 146, 3);">3号线</a><br>
+                    <!--选择线路下拉组合框-->
+                </div>
+                <br>
+            </div>
+            <br>
+            <!--<br>用于换行-->
+            <div class="dropdown">
+                <button class="dropbtn">选择区间</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <!--<br>用于换行-->
+                    <!--站点-->
+                    <a href="#" onclick="playAudio1()" style="font-size: 16px;color: #000000;">广州东站-体育中心</a><br>
+                    <a href="#" onclick="playAudio2()" style="font-size: 16px;color: #000000;">体育中心-体育西路</a><br>
+                    <a href="#" onclick="playAudio3()" style="font-size: 16px;color: #000000;">体育西路-杨箕</a><br>
+                    <a href="#" onclick="playAudio4()" style="font-size: 16px;color: #000000;">杨箕-东山口</a><br>
+                    <a href="#" onclick="playAudio5()" style="font-size: 16px;color: #000000;">东山口-烈士陵园</a><br>
+                    <a href="#" onclick="playAudio6()" style="font-size: 16px;color: #000000;">烈士陵园-农讲所</a><br>
+                    <a href="#" onclick="playAudio7()" style="font-size: 16px;color: #000000;">农讲所-公园前</a><br>
+                    <a href="#" onclick="playAudio8()" style="font-size: 16px;color: #000000;">公园前-西门口</a><br>
+                    <a href="#" onclick="playAudio9()" style="font-size: 16px;color: #000000;">西门口-陈家祠</a><br>
+                    <a href="#" onclick="playAudio10()" style="font-size: 16px;color: #000000;">陈家祠-长寿路</a><br>
+                    <a href="#" onclick="playAudio11()" style="font-size: 16px;color: #000000;">长寿路-黄沙</a><br>
+                    <a href="#" onclick="playAudio12()" style="font-size: 16px;color: #000000;">黄沙-芳村</a><br>
+                    <a href="#" onclick="playAudio13()" style="font-size: 16px;color: #000000;">芳村-花地湾</a><br>
+                    <a href="#" onclick="playAudio14()" style="font-size: 16px;color: #000000;">花地湾-坑口</a><br>
+                    <a href="#" onclick="playAudio15()" style="font-size: 16px;color: #000000;">坑口-西塱</a><br>
+                    <!--选择线路下拉组合框-->
+                </div>
+            </div>
+            <!--以下为播放音频区域；<br>用于换行-->
+            <br>
+            <button id="stopAllAudio">停止播放</button>
+            <br>
+            <button id="pauseAllAudio">暂停音频</button>
+            <br>
+            <button id="resumeAllAudio">恢复音频</button>
+            <!--上面的用于停止播放音频-->
+            <audio id="audio1" src="http://gbh.zhengxian.top/sound/1/下站体育中心.mp3" preload="auto"></audio>
+            <audio id="audio2" src="http://gbh.zhengxian.top/sound/1/下站体育西路.mp3" preload="auto"></audio>
+            <audio id="audio3" src="http://gbh.zhengxian.top/sound/1/下站杨箕.mp3" preload="auto"></audio>
+            <audio id="audio4" src="http://gbh.zhengxian.top/sound/1/下站东山口.mp3" preload="auto"></audio>
+            <audio id="audio5" src="http://gbh.zhengxian.top/sound/1/下站烈士陵园.mp3" preload="auto"></audio>
+            <audio id="audio6" src="http://gbh.zhengxian.top/sound/1/下站农讲所.mp3" preload="auto"></audio>
+            <audio id="audio7" src="http://gbh.zhengxian.top/sound/1/下站公园前.mp3" preload="auto"></audio>
+            <audio id="audio8" src="http://gbh.zhengxian.top/sound/1/下站西门口.mp3" preload="auto"></audio>
+            <audio id="audio9" src="http://gbh.zhengxian.top/sound/1/下站陈家祠.mp3" preload="auto"></audio>
+            <audio id="audio10" src="http://gbh.zhengxian.top/sound/1/下站长寿路.mp3" preload="auto"></audio>
+            <audio id="audio11" src="http://gbh.zhengxian.top/sound/1/下站黄沙.mp3" preload="auto"></audio>
+            <audio id="audio12" src="http://gbh.zhengxian.top/sound/1/下站芳村.mp3" preload="auto"></audio>
+            <audio id="audio13" src="http://gbh.zhengxian.top/sound/1/下站花地湾.mp3" preload="auto"></audio>
+            <audio id="audio14" src="http://gbh.zhengxian.top/sound/1/下站坑口.mp3" preload="auto"></audio>
+            <audio id="audio15" src="http://gbh.zhengxian.top/sound/1/下站西塱.mp3" preload="auto"></audio>
+            <!--分割线-->
+            <script>
+                //该js用于停止播放
+                function stopAllAudioPlayers() {
+                    var audioPlayers = [
+                        document.getElementById('audio1'),
+                        document.getElementById('audio2'),
+                        document.getElementById('audio3'),
+                        // 以此类推，为其他音频文件添加类似的元素引用  
+                    ];
+
+                    for (var i = 0; i < audioPlayers.length; i++) {
+                        audioPlayers[i].pause();
+                    }
+                }
+
+                var stopAllAudio = document.getElementById('stopAllAudio');
+                stopAllAudio.addEventListener('click', stopAllAudioPlayers);
+
+            </script>
+            <!--底部信息-->
+            <div>
+                <br>
+                <a href="https://beian.miit.gov.cn/" class="my-link">粤ICP备2023109504号-1</a>
+                <br>
+                <p style="font-size: 16px;">by:<a href="https://blog.zhengxian.top/" class="my-link">380AM-0204</a></p>
+            </div>
+</body>
+
+</html>
